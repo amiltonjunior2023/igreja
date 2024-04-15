@@ -1,0 +1,380 @@
+*{
+    padding: 0px !important;
+    margin: 0 px !important;
+    
+}
+
+body{
+    background: black !important;
+}
+
+
+
+nav ul li a{
+    color: aliceblue !important;
+    font: 400 !important;
+    font-size: 1.4rem !important;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-right: 5rem !important;
+    margin-left: 1rem !important;
+}
+
+nav ul li a:hover{
+    color: #FFD700!important;
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+.logo-texto{
+    border-left: 4px solid white !important;
+}
+.parte1{
+    color: white !important;
+    margin-left: 1rem!important;
+}
+
+.parte2 {
+    color: gray !important;
+    margin-left: 1rem !important;
+}
+
+nav img{
+    margin-left: 3rem !important
+}
+
+nav button{
+    color: aliceblue !important;
+   
+}
+
+.dropdown-item{
+    color: black !important;
+}
+
+.page1 {
+    width: 100% !important;
+    height: 50% !important;
+   
+}
+
+.espaco{
+    margin-top: 5rem !important;
+    
+}
+
+.tamanho{
+    width: 100% !important;
+    height: 50% !important;
+    
+}
+
+.texto{
+    font-size: 1.2rem !important;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    letter-spacing: 1px !important;
+}
+
+/* chat */
+
+/* Estilizando a barra de rolagem */
+::-webkit-scrollbar {
+    width: 12px;
+    /* Largura da barra de rolagem */
+}
+
+/* Estilizando o trilho da barra de rolagem */
+::-webkit-scrollbar-track {
+    background: dimgray;
+    /* Cor de fundo do trilho */
+}
+
+/* Estilizando o indicador da barra de rolagem */
+::-webkit-scrollbar-thumb {
+    background: #FFD700;
+    /* Cor do indicador */
+    border-radius: 30px !important;
+    height: 50px !important;
+}
+
+/* Mudando a cor quando passa o mouse sobre a barra de rolagem */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* Cor do indicador ao passar o mouse */
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: radial-gradient(circle at center, darkslategrey, black);
+
+
+
+}
+
+
+
+
+
+
+
+
+.icone {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+    cursor: pointer;
+    transition: 2s;
+}
+
+.icone:hover {
+    transform: scale(1.2) !important;
+}
+
+
+
+#chat-box {
+    display: none;
+    /* Inicia escondido */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 400px !important;
+    height: 500px !important;
+    background-color: #fff;
+    border: 4px solid #FFD700;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 1rem !important;
+    margin-left: 1rem !important;
+    z-index: 2;
+    /* Garante que o chat box está sobre o ícone */
+    color: black;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+#chat-footer {
+    display: flexbox;
+    position: relative !important;
+    bottom: initial !important;
+    margin: auto !important;
+    left: 0;
+
+}
+
+.bot-message {
+    background: #F2F2F2 !important;
+    color: black;
+    align-self: flex-start;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.chat-message {
+    margin-bottom: 15px;
+    /* Espaço de 10 pixels entre cada mensagem */
+    padding-top: 25px !important;
+    margin-top: 20rem !;
+
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border-radius: 10px;
+}
+
+.fechar {
+    padding: 10px;
+    border-radius: 10px !important;
+    color: black;
+    cursor: pointer;
+    width: 100% !important;
+    font-size: 0.9rem;
+    bottom: 10px;
+    right: 10px;
+    z-index: 1;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#chat-box {
+    transition: opacity 0.5s;
+
+}
+
+.borda {
+    border-radius: 10px;
+    box-shadow: 0 0 20px #E6E6E6;
+}
+
+.borda:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s !important;
+    text-align: center !important;
+}
+
+.user-input {
+    width: 100%;
+    margin-top: 10px !important;
+    height: 45px !important;
+    border-radius: 15px !important;
+    padding: 6px !important;
+    margin-bottom: 15px !important;
+    outline: none;
+}
+
+
+.offcanvas-body button:hover {
+    transform: scale(1.2);
+    /* aumenta o tamanho do botão para 1.5 vezes o tamanho original */
+    transition: 1s !important;
+}
+
+#chat-box {
+    height: 300%;
+    /* Altura desejada para o chat */
+    overflow-y: auto;
+    /* Adiciona uma barra de rolagem vertical quando necessário */
+
+
+}
+
+/* Adicione estilos para a mensagem de "digitando" */
+.bot-is-typing::after {
+    content: "Digitando...";
+    display: block;
+    padding: 5px;
+    font-size: 1em;
+    color: black !important;
+}
+
+
+
+.baixo {
+
+    bottom: 0;
+    cursor: pointer;
+}
+
+/* para dispositivos menores */
+
+@media (max-width: 700px){
+
+    nav ul li a{
+        color: aliceblue !important;
+        font: 300 !important;
+        font-size: 1.2rem !important;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin-right: 1rem !important;
+        margin-bottom: 1rem !important;
+    }
+
+    nav ul li a:hover{
+        color: #FFD700!important;
+        transition: 1s;
+        transform: scale(1.1);
+        padding-right: 4rem! important;
+        
+    }
+
+    nav button{
+        margin-right: 1rem !important;
+    }
+
+   main{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+   }
+
+   .texto{
+    font-size: 1.2rem !important;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    letter-spacing: 1px !important;
+    margin-top: 3rem !important;
+}
+
+nav img{
+    margin-left: 3px !important;
+}
+
+.espaco{
+    margin-top: 1rem !important;
+}
+
+#chat-box {
+    display: none;
+    /* Inicia escondido */
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100% !important;
+    background-color: #fff;
+    border: 4px solid #FFD700;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: 1rem !important;
+    margin-left: 1rem !important;
+    z-index: 2;
+    /* Garante que o chat box está sobre o ícone */
+    color: black;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+
+.logo-texto {
+    border-left: 2px solid white !important;
+    
+}
+
+.parte1 {
+    color: white !important;
+    font-size: 60% !important;
+   
+}
+
+.parte2 {
+    color: gray !important;
+    font-size: 50% !important;
+    
+}
+
+.logo3{
+    width: 70% !important;
+}
+
+.icone{
+        width: 32px !important;
+        margin-right: 25px !important;
+}
+
+
+}
+
+
+.container {
+    max-width: 50px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.controls {
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
